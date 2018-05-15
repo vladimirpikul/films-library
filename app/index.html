@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">	
+	<title>Films library</title>
+
+	<!-- GOOGLE FONTS -->
+	<link href="https://fonts.googleapis.com/css?family=Dosis:700|Open+Sans:700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+	<link rel="stylesheet" href="css/font-awesome.css">
+
+	<!-- STYLES -->
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<!-- HEADER START -->
+<header id="header">
+	<div class="page-name">
+		<span>Films library</span>
+	</div>
+	<div class="header-container">
+		<div class="add-item">
+			<span class="circle">
+				<span class="circle-text">+</span>
+			</span>
+			<span class="add-item-text">Add new film</span>
+		</div>
+	</div>
+</header>
+<!-- HEADER END -->
+
+<!-- MAIN START -->
+<main id="main">
+	<div class="add-form">
+		<div class="input-row">
+			<span>Title</span>
+			<input class="title" type="text">
+		</div>
+		<div class="input-row">
+			<span>Year</span>
+			<input class="year" type="text">
+		</div>
+		<div class="input-row">
+			<span>Country</span>
+			<input class="country" type="text">
+		</div>
+		<div class="input-row">
+			<span>Genre</span>
+			<input class="genre" type="text">
+		</div>
+		<div class="input-row">
+			<span>Poster (link)</span>
+			<input class="poster" type="text">
+		</div>
+		<div class="input-row">
+			<span>Description</span>
+			<input class="description" type="text">
+		</div>
+		<div class="button-group">
+			<button class="red-btn cancel-btn">Cancel</button>
+			<button class="blue-btn add-film-item-btn">Add</button>
+		</div>
+	</div>
+	<div class="main-container">
+		<div class="film-item pattern">
+			<div class="inner-block">
+				<div class="background-img"></div>
+				<div class="img-block">
+					<img class="poster" src="" alt="">
+				</div>
+				<div class="description-block">
+					<div class="film-title">
+						<span class="title"></span>
+						<span class="text"></span>
+					</div>
+					<div class="film-description">
+						<table>
+							<tr>
+								<td>country</td>
+								<td class="country"></td>
+							</tr>
+							<tr>
+								<td>year</td>
+								<td class="year"></td>
+							</tr>
+							<tr>
+								<td>Genre</td>
+								<td class="genre"></td>
+							</tr>
+							<tr>
+								<td>actors</td>
+								<td class="actors"></td>
+							</tr>
+						</table>
+					</div>
+					<div class="button-group">
+						<button class="red-btn delete-btn">Delete</button>
+						<button class="blue-btn edit-btn">Edit</button>
+					</div>
+				</div>
+			</div>
+			<div class="edit-form">
+				<div class="input-row">
+					<span>Title</span>
+					<input class="title" type="text">
+				</div>
+				<div class="input-row">
+					<span>Year</span>
+					<input class="year" type="text">
+				</div>
+				<div class="input-row">
+					<span>Country</span>
+					<input class="country" type="text">
+				</div>
+				<div class="input-row">
+					<span>Genre</span>
+					<input class="genre" type="text">
+				</div>
+				<div class="input-row">
+					<span>Poster (link)</span>
+					<input class="poster" type="text">
+				</div>
+				<div class="input-row">
+					<span>Description</span>
+					<input class="description" type="text">
+				</div>
+				<div class="button-group">
+					<button class="red-btn cancel-btn">Cancel</button>
+					<button class="blue-btn save-btn">Save</button>
+				</div>
+			</div>
+			<div class="comment-block">
+				<span class="drop-down">Comments: <span class="comment-count"></span> <i class="fa fa-angle-up"></i></span>
+			</div>
+			<div class="comment-form">
+				<div class="comments"></div>
+				<input type="text" placeholder="Add your comment">
+				<div class="button-group">
+					<button class="blue-btn add-btn">Add</button>
+				</div>
+			</div>
+		</div>
+		<div class="film-item template">
+			<div class="inner-block">
+				<div class="background-img"></div>
+				<div class="img-block">
+					<img class="poster" src="http://static.hdrezka.ac/i/2015/10/29/z13622384b3efwg39u16u.jpg" alt="">
+				</div>
+				<div class="description-block">
+					<div class="film-title">
+						<span class="title">Martian</span>
+						<span class="text">Mars mission Ares-2 in the process was forced to urgently leave the planet because of the impending sandstorm. Engineer and Biolog mark Watney suffered an injury suit during a sand storm. The mission, considering him dead...</span>
+					</div>
+					<div class="film-description">
+						<table>
+							<tr>
+								<td>country</td>
+								<td class="country">USA</td>
+							</tr>
+							<tr>
+								<td>year</td>
+								<td class="year">2016</td>
+							</tr>
+							<tr>
+								<td>Genre</td>
+								<td class="genre">Fantasy</td>
+							</tr>
+							<tr>
+								<td>actors</td>
+								<td class="actors">Aksel Hennie, Chiwetel Ejiofor, Jeff Daniels, Jessica Chastain, Kate Mara, Kristen Wiig, Matt Damon, Michael Peña, Sean Bean, Sebastian Stan</td>
+							</tr>
+						</table>
+					</div>
+					<div class="button-group">
+						<button class="red-btn delete-btn">Delete</button>
+						<button class="blue-btn edit-btn">Edit</button>
+					</div>
+				</div>
+			</div>
+			<div class="edit-form">
+				<div class="input-row">
+					<span>Title</span>
+					<input class="title" type="text">
+				</div>
+				<div class="input-row">
+					<span>Year</span>
+					<input class="year" type="text">
+				</div>
+				<div class="input-row">
+					<span>Country</span>
+					<input class="country" type="text">
+				</div>
+				<div class="input-row">
+					<span>Genre</span>
+					<input class="genre" type="text">
+				</div>
+				<div class="input-row">
+					<span>Poster (link)</span>
+					<input class="poster" type="text">
+				</div>
+				<div class="input-row">
+					<span>Description</span>
+					<input class="description" type="text">
+				</div>
+				<div class="button-group">
+					<button class="red-btn cancel-btn">Cancel</button>
+					<button class="blue-btn save-btn">Save</button>
+				</div>
+			</div>
+			<div class="comment-block">
+				<span class="drop-down">Comments: <span class="comment-count"></span> <i class="fa fa-angle-up"></i></span>
+			</div>
+			<div class="comment-form">
+				<div class="comments"></div>
+				<input type="text" placeholder="Add your comment">
+				<div class="button-group">
+					<button class="blue-btn add-btn">Add</button>
+				</div>
+			</div>
+		</div>
+		<div class="film-item template">
+			<div class="inner-block">
+				<div class="background-img"></div>
+				<div class="img-block">
+					<img class="poster" src="http://static.hdrezka.ac/i/2015/10/29/z13622384b3efwg39u16u.jpg" alt="">
+				</div>
+				<div class="description-block">
+					<div class="film-title">
+						<span class="title">Martian</span>
+						<span class="text">Mars mission Ares-2 in the process was forced to urgently leave the planet because of the impending sandstorm. Engineer and Biolog mark Watney suffered an injury suit during a sand storm. The mission, considering him dead...</span>
+					</div>
+					<div class="film-description">
+						<table>
+							<tr>
+								<td>country</td>
+								<td class="country">USA</td>
+							</tr>
+							<tr>
+								<td>year</td>
+								<td class="year">2016</td>
+							</tr>
+							<tr>
+								<td>Genre</td>
+								<td class="genre">Fantasy</td>
+							</tr>
+							<tr>
+								<td>actors</td>
+								<td class="actors">Aksel Hennie, Chiwetel Ejiofor, Jeff Daniels, Jessica Chastain, Kate Mara, Kristen Wiig, Matt Damon, Michael Peña, Sean Bean, Sebastian Stan</td>
+							</tr>
+						</table>
+					</div>
+					<div class="button-group">
+						<button class="red-btn delete-btn">Delete</button>
+						<button class="blue-btn edit-btn">Edit</button>
+					</div>
+				</div>
+			</div>
+			<div class="edit-form">
+				<div class="input-row">
+					<span>Title</span>
+					<input class="title" type="text">
+				</div>
+				<div class="input-row">
+					<span>Year</span>
+					<input class="year" type="text">
+				</div>
+				<div class="input-row">
+					<span>Country</span>
+					<input class="country" type="text">
+				</div>
+				<div class="input-row">
+					<span>Genre</span>
+					<input class="genre" type="text">
+				</div>
+				<div class="input-row">
+					<span>Poster (link)</span>
+					<input class="poster" type="text">
+				</div>
+				<div class="input-row">
+					<span>Description</span>
+					<input class="description" type="text">
+				</div>
+				<div class="button-group">
+					<button class="red-btn cancel-btn">Cancel</button>
+					<button class="blue-btn save-btn">Save</button>
+				</div>
+			</div>
+			<div class="comment-block">
+				<span class="drop-down">Comments: <span class="comment-count"></span> <i class="fa fa-angle-up"></i></span>
+			</div>
+			<div class="comment-form">
+				<div class="comments"></div>
+				<input type="text" placeholder="Add your comment">
+				<div class="button-group">
+					<button class="blue-btn add-btn">Add</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</main>
+<!-- MAIN END -->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="js/app.js"></script>
+
+</body>
+</html>

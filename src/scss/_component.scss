@@ -1,0 +1,85 @@
+// button group
+.button-group{
+  position: absolute;
+  bottom: 0;
+
+  button{
+    font: $fontBold $btnFontSize $fontFamilyOS;
+    letter-spacing: $letterSpacing;
+    color: $white;
+    width: 140px;
+    height: 40px;
+    border-radius: 20px;
+
+    & + button{
+      margin-left: 20px;
+    }
+  }
+
+  .red-btn{
+    border: 1px solid $solidRed;
+    box-shadow: 0 1px 0 $solidRed;
+    background-color: $red;
+
+    &:hover{
+      background-color: $lightRed;
+    }
+  }
+
+  .blue-btn{
+    border: 1px solid $solidBlue;
+    box-shadow: 0 1px 0 $solidBlue;
+    background-color: $blue;
+
+    &:hover{
+      background-color: $lightBlue;
+    }
+  }
+}
+
+// input
+input{
+  font: $fontRegular #{$fontSize}/#{$lineHeightDouble} $fontFamilyM;
+  height: 40px;
+  width: 500px;
+  border-radius: 4px;
+  border: 1px solid $inputBorderColor;
+  margin-top: 10px;
+  padding: 0 18px;
+}
+
+// add form
+.add-form, .edit-form{
+  display: none;
+  position: relative;
+  padding: 40px 105px;
+  background-color: $white;
+  height: 840px;
+  width: 100%;
+  max-width: 1170px;
+  margin: 0 auto;
+  border-radius: 0 0 15px 15px;
+
+  &.open{
+    display: block;
+  }
+
+  .button-group{
+    margin-bottom: 40px;
+  }
+
+  .input-row{
+    text-align: left;
+
+    span{
+      font: $fontRegular #{$fontSizeInputForm}/#{$lineHeightTriple} $fontFamilyM;
+      display: block;
+      color: $black;
+      text-transform: uppercase;
+    }
+
+    &+.input-row{
+      margin-top: 30px;
+    }
+  }
+}

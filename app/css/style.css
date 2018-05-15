@@ -1,0 +1,245 @@
+* {
+  box-sizing: border-box; }
+
+body {
+  margin: 0;
+  color: #fff;
+  font: 700 16px "Open Sans", sans-serif;
+  background-color: #e4edf4; }
+
+img {
+  max-width: 100%;
+  max-height: 100%; }
+
+button {
+  outline: none;
+  cursor: pointer; }
+
+.button-group {
+  position: absolute;
+  bottom: 0; }
+  .button-group button {
+    font: 700 14px "Open Sans", sans-serif;
+    letter-spacing: 0.075em;
+    color: #fff;
+    width: 140px;
+    height: 40px;
+    border-radius: 20px; }
+    .button-group button + button {
+      margin-left: 20px; }
+  .button-group .red-btn {
+    border: 1px solid #ff695a;
+    box-shadow: 0 1px 0 #ff695a;
+    background-color: #ff7e70; }
+    .button-group .red-btn:hover {
+      background-color: #ff604a; }
+  .button-group .blue-btn {
+    border: 1px solid #2fa5e1;
+    box-shadow: 0 1px 0 #2fa5e1;
+    background-color: #6ecdfd; }
+    .button-group .blue-btn:hover {
+      background-color: #52B7FD; }
+
+input {
+  font: 400 16px/1.75 "Montserrat", sans-serif;
+  height: 40px;
+  width: 500px;
+  border-radius: 4px;
+  border: 1px solid #d0e0eb;
+  margin-top: 10px;
+  padding: 0 18px; }
+
+.add-form, .edit-form {
+  display: none;
+  position: relative;
+  padding: 40px 105px;
+  background-color: #fff;
+  height: 840px;
+  width: 100%;
+  max-width: 1170px;
+  margin: 0 auto;
+  border-radius: 0 0 15px 15px; }
+  .add-form.open, .edit-form.open {
+    display: block; }
+  .add-form .button-group, .edit-form .button-group {
+    margin-bottom: 40px; }
+  .add-form .input-row, .edit-form .input-row {
+    text-align: left; }
+    .add-form .input-row span, .edit-form .input-row span {
+      font: 400 14px/2.5 "Montserrat", sans-serif;
+      display: block;
+      color: #000;
+      text-transform: uppercase; }
+    .add-form .input-row + .input-row, .edit-form .input-row + .input-row {
+      margin-top: 30px; }
+
+#header {
+  background-color: #6fcdff;
+  text-align: center;
+  position: fixed;
+  width: 100%;
+  height: 135px;
+  z-index: 99;
+  top: 0; }
+  #header .page-name {
+    position: absolute;
+    background-color: #51afe1;
+    height: 100%;
+    width: calc((100% - 1170px)/2);
+    left: 0; }
+    #header .page-name span {
+      font-family: "Montserrat", sans-serif;
+      font-size: 36px;
+      font-weight: 400;
+      line-height: 135px; }
+  #header .header-container {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    max-width: 1170px; }
+    #header .header-container .add-item {
+      padding-left: 100px;
+      line-height: 135px;
+      text-align: left; }
+      #header .header-container .add-item .circle {
+        position: relative;
+        display: inline-block;
+        vertical-align: middle;
+        background-color: #fff;
+        height: 40px;
+        width: 40px;
+        border-radius: 50%; }
+        #header .header-container .add-item .circle.rotate {
+          transform: rotate(45deg); }
+        #header .header-container .add-item .circle .circle-text {
+          position: absolute;
+          font-size: 24px;
+          color: #6fcdff;
+          line-height: 0;
+          transform: translate(-50%, -50%);
+          left: 50%;
+          top: 50%; }
+      #header .header-container .add-item .add-item-text {
+        margin-left: 10px; }
+
+#main {
+  background-color: #e4edf4;
+  padding-top: 135px;
+  min-height: 100vh;
+  text-align: center; }
+  #main .main-container {
+    width: 100%;
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 50px 0; }
+    #main .main-container .film-item {
+      text-align: left;
+      border-radius: 10px;
+      min-height: 700px; }
+      #main .main-container .film-item.pattern {
+        display: none; }
+      #main .main-container .film-item + .film-item {
+        margin-top: 50px; }
+      #main .main-container .film-item .inner-block {
+        position: relative;
+        overflow: hidden;
+        height: 605px;
+        border-radius: 15px 15px 0 0;
+        padding: 80px 105px; }
+        #main .main-container .film-item .inner-block .background-img {
+          position: absolute;
+          margin-top: -160px;
+          margin-left: -210px;
+          background-image: url("http://static.hdrezka.ac/i/2015/10/29/z13622384b3efwg39u16u.jpg");
+          background-position: center 20%;
+          background-size: 1300px;
+          width: 120%;
+          height: 120%;
+          filter: blur(30px); }
+          #main .main-container .film-item .inner-block .background-img:after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.25); }
+        #main .main-container .film-item .inner-block .img-block {
+          position: relative;
+          height: 440px;
+          width: 310px;
+          display: inline-block; }
+          #main .main-container .film-item .inner-block .img-block img {
+            box-shadow: 0px 12px 50px 10px rgba(0, 0, 0, 0.5);
+            position: absolute;
+            border-radius: 5px;
+            left: 50%;
+            transform: translateX(-50%); }
+        #main .main-container .film-item .inner-block .description-block {
+          display: inline-block;
+          margin-left: 50px;
+          width: 595px;
+          vertical-align: top;
+          position: relative;
+          height: 440px; }
+          #main .main-container .film-item .inner-block .description-block .film-title span {
+            display: block; }
+            #main .main-container .film-item .inner-block .description-block .film-title span + span {
+              margin-top: 20px; }
+          #main .main-container .film-item .inner-block .description-block .film-title .title {
+            font: 400 36px "Montserrat", sans-serif; }
+          #main .main-container .film-item .inner-block .description-block .film-title .text {
+            font: 400 16px "Montserrat", sans-serif;
+            line-height: 1.75;
+            color: #e4edf4;
+            word-wrap: break-word; }
+          #main .main-container .film-item .inner-block .description-block .film-description {
+            color: #e4edf4;
+            margin-top: 20px; }
+            #main .main-container .film-item .inner-block .description-block .film-description table tbody {
+              vertical-align: top; }
+            #main .main-container .film-item .inner-block .description-block .film-description table tr td:first-child {
+              letter-spacing: 0.075em;
+              font: 400 12px "Montserrat", sans-serif;
+              width: 165px;
+              text-transform: uppercase;
+              line-height: 30px; }
+            #main .main-container .film-item .inner-block .description-block .film-description table tr td:last-child {
+              font: 700 16px "Montserrat", sans-serif;
+              line-height: 1.75; }
+      #main .main-container .film-item .comment-block {
+        background-color: #fff;
+        height: 95px;
+        border-radius: 0 0 15px 15px;
+        padding-left: 105px; }
+        #main .main-container .film-item .comment-block.hide {
+          display: none; }
+        #main .main-container .film-item .comment-block span {
+          color: #ff7e70;
+          line-height: 95px;
+          letter-spacing: 0.075em; }
+          #main .main-container .film-item .comment-block span .rotate {
+            transform: rotate(180deg); }
+      #main .main-container .film-item .comment-form {
+        display: none;
+        position: relative;
+        padding: 0 105px 110px;
+        background-color: #fff;
+        border-radius: 0 0 15px 15px;
+        top: -21px;
+        padding-top: 20px; }
+        #main .main-container .film-item .comment-form.open {
+          display: block; }
+        #main .main-container .film-item .comment-form .comments span {
+          font: 400 16px "Montserrat", sans-serif;
+          padding: 30px 0;
+          border-bottom: 2px solid #e4edf4;
+          border-top: 2px solid #e4edf4;
+          color: #000;
+          display: block;
+          word-wrap: break-word; }
+          #main .main-container .film-item .comment-form .comments span + span {
+            border-top: none; }
+        #main .main-container .film-item .comment-form input {
+          margin-top: 25px;
+          width: 100%; }
+        #main .main-container .film-item .comment-form .button-group {
+          margin-bottom: 50px; }
